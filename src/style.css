@@ -1,0 +1,9 @@
+#bank-tab-menu > div > ul {
+    display: flex;
+    justify-content: center;
+}
+
+#bank-tab-menu > div > div.block-content.tab-content > div.tab-pane > div {
+    display: flex;
+    justify-content: center;
+}

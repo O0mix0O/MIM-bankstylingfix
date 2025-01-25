@@ -1,4 +1,5 @@
 {
     "namespace": "bankstylingfix",
-    "setup": "setup.mjs"
-}
+    "setup": "setup.mjs",
+    "load": ["style.css"]
+  }
