@@ -1,16 +1,12 @@
-# Melvor Idle UI Blur Mod
+# Melvor Idle Bank Tab Centering Mod
 
-This mod adds a blur effect to the game's elements when any modal is visible. The blur effect is removed once the modal is no longer displayed.
+This mod modifies the styling of the elements within the `#bank-tab-menu` section and `.tab-pane` of the Melvor Idle game interface. It ensures that the first `<ul>` inside the `#bank-tab-menu` and the `<div>` elements inside `.tab-pane` are styled with `justify-content: center`, applying a flex layout to center the contents.
 
 ## Features
+- Centers the first `<ul>` inside `#bank-tab-menu`.
+- Centers all `<div>` elements inside each `.tab-pane`.
+- Dynamically applies the styles when the elements are added to the DOM.
 
-- **Adds blur**: When a modal appears, it applies a `filter: blur(5px)` to the `#page-container` and `#skill-footer-minibar-container` and other elements.
-- **Removes blur**: Once the modal disappears, the blur effect is removed.
-
-## How It Works
-
-- **Modal Visibility Detection**: The mod uses JavaScript to monitor the visibility of the modal. When the modal becomes visible, the blur effect is applied to the main game content. The blur is removed when the modal is no longer visible.
-
-## Acknowledgments
-
-- Thanks to the Melvor Idle community for supporting modding and making this mod possible!
+## How it Works
+- The mod uses a `MutationObserver` to detect changes in the DOM and apply the styles once the necessary elements are present.
+- The script only runs once and will stop observing after applying the styles, making it efficient and non-intrusive.

@@ -1,4 +1,4 @@
 {
-    "namespace": "offline_UI",
+    "namespace": "bankstylingfix",
     "setup": "setup.mjs"
 }
