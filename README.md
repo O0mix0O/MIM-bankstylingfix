@@ -10,3 +10,5 @@ This mod modifies the styling of the elements within the `#bank-tab-menu` sectio
 ## How it Works
 - The mod uses a `MutationObserver` to detect changes in the DOM and apply the styles once the necessary elements are present.
 - The script only runs once and will stop observing after applying the styles, making it efficient and non-intrusive.
+
+.
